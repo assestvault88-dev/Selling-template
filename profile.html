@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Financila Dashboard | User Account & Activity</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description"
+        content="View and manage your Financila Dashboard user profile. Track recent activity, team stats, and account security settings." />
+    <meta name="keywords" content="financila profile, user account, dashboard activity, team statistics" />
+    <meta name="author" content="Financila" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://financila.com/profile.html" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle Sidebar">☰</button>
+            <div class="logo">Financila</div>
+        </div>
+        <nav class="nav">
+            <a href="landing.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="docs.html">Docs</a>
+        </nav>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Profile</h3>
+        </div>
+        <ul>
+            <li><a href="#" class="active">Overview</a></li>
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Security</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard-grid" id="main">
+        <div class="content-center">
+            <section class="users-data-section">
+                <div class="section-header">
+                    <h2>User Profile</h2>
+                </div>
+                <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div
+                        style="width: 100px; height: 100px; background: var(--color-surface-hover); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--color-accent);">
+                        JD</div>
+                    <div>
+                        <h3 style="color: var(--color-text); margin-bottom: 0.5rem;">John Doe</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Senior Administrator</p>
+                        <p style="color: var(--color-text); line-height: 1.5;">Responsible for managing system
+                            configurations and user access controls. Joined in 2021.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="users-data-section">
+                <div class="section-header">
+                    <h2>Recent Activity</h2>
+                </div>
+                <ul style="list-style: none; color: var(--color-text-muted);">
+                    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-border);">Logged in from New
+                        York (IP: 192.168.1.1) - <span style="color: var(--color-text);">2 mins ago</span></li>
+                    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-border);">Updated system
+                        settings - <span style="color: var(--color-text);">1 hour ago</span></li>
+                    <li style="padding: 0.75rem 0;">Changed password - <span
+                            style="color: var(--color-text);">Yesterday</span></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="content-right">
+            <section class="demographics-section">
+                <h2>Team Stats</h2>
+                <div class="demo-item">
+                    <div class="demo-label"><span>Tasks Completed</span> <span>85%</span></div>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="demo-item">
+                    <div class="demo-label"><span>Response Time</span> <span>92%</span></div>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 92%"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -49,7 +49,7 @@ A premium, modern financial dashboard template built with vanilla HTML, CSS, and
 1. **Extract the template** to your project folder
 2. **Open `landing.html`** in your browser to view the landing page
 3. **Click "View Dashboard"** to access the main dashboard
-4. **Modify the mock data** in `scripts/app.js` to use your real data
+4. **Modify the mock data** in `app.js` to use your real data
 
 ### Running Locally
 
@@ -81,10 +81,8 @@ financila-dashboard/
 ├── profile.html        # User profile page
 ├── README.md           # This documentation
 ├── LICENSE             # License information
-├── styles/
-│   └── main.css        # All CSS styles
-└── scripts/
-    └── app.js          # Dashboard logic & chart data
+├── main.css            # All CSS styles
+└── app.js              # Dashboard logic & chart data
 ```
 
 ---
@@ -93,7 +91,7 @@ financila-dashboard/
 
 ### Changing Colors
 
-Open `styles/main.css` and modify the CSS variables in `:root`:
+Open `main.css` and modify the CSS variables in `:root`:
 
 ```css
 :root {
@@ -140,7 +138,7 @@ Navigation is in the `<header>` section of each HTML file:
 
 ### Step 1: Locate the Data Object
 
-Open `scripts/app.js` and find the `viewData` object (around line 20):
+Open `app.js` and find the `viewData` object (around line 20):
 
 ```javascript
 const viewData = {
